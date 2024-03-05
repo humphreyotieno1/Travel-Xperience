@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
-import Explore from './Explore';
-import Plan from './Plan';
-import Experience from './Experience';
-import Book from './Book';
-import Contact from './Contact';
-import Login from './Login';
-import Register from './Register';
-import GetStarted from './GetStarted';
-import LearnMore from './LearnMore';
+import Explore from './components/Explore';
+import Plan from './components/Plan';
+import Experience from './components/Experience';
+import Book from './components/Book';
+import Contact from './components/Contact';
+import Login from './components/Login';
+import Register from './components/Register';
+import GetStarted from './components/GetStarted';
+import LearnMore from './components/LearnMore';
 
 function App() {
   return (
