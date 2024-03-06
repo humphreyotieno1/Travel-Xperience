@@ -1,7 +1,6 @@
 import React from 'react';
 
-const GetStarted = () => {
-  // Content to help users get started with the website or service
+function GetStarted() {
   return (
     <div>
       <h2>Get Started</h2>

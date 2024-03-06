@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-const Register = () => {
-  // State variables and logic for handling registration process
+function Register() {
   return (
     <div>
       <h2>Register</h2>

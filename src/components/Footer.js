@@ -1,4 +1,3 @@
-// Footer.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -20,7 +19,7 @@ const KeepInTouch = () => {
   );
 }
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
       <ul className="footer-links">

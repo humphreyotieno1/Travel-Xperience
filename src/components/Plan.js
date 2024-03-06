@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Plan = () => {
+function Plan() {
   const [formData, setFormData] = useState({
     destination: '',
     dates: '',

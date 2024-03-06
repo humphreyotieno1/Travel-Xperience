@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-const Login = () => {
-  // State variables and logic for handling login process
+function Login() {
   return (
     <div>
       <h2>Login</h2>

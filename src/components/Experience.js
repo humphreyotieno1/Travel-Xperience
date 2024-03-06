@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Experience = () => {
-  // State variables and logic for fetching and displaying experiences
+function Experience () { 
   return (
     <div>
       <h2>Experience</h2>

@@ -1,7 +1,6 @@
 import React from 'react';
 
-const LearnMore = () => {
-  // Additional information about the website or business
+function LearnMore() {
   return (
     <div>
       <h2>Learn More</h2>

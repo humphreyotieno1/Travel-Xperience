@@ -18,7 +18,7 @@ const Search = () => {
   );
 }
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className="navbar">
       <h1 className="header"><Link to="/">TRAVELXPERIENCE</Link></h1>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Destination = ({ destinations }) => {
+function Destination ({ destinations }) {
   return (
     <div className="destinations">
       {destinations.map(destination => (
