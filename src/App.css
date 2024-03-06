@@ -1,6 +1,3 @@
-/* App.css */
-
-/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 .container {
@@ -58,7 +55,6 @@ body {
   gap: 10px;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 10px;
@@ -92,4 +88,20 @@ body {
 
 .link-with-margin {
   margin-right: 10px;
+}
+
+.search-component {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar-search {
+  margin-left: auto;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
 }
