@@ -1,40 +1,65 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
-const Search = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // form submission
-    const formData = new FormData(e.target);
-    const searchQuery = formData.get('searchQuery');
-    console.log('Search query:', searchQuery);
-  }
-
-  return (
-    <form className="search-form" onSubmit={handleSubmit}>
-      <input type="text" name="searchQuery" placeholder="Search destinations" />
-      <button type="submit">Search</button>
-    </form>
-  );
-}
+import { Button } from './Button';
+import './Navbar.css'
 
 function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click); 
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if(window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
   return (
-    <nav className="navbar">
-      <h1 className="header"><Link to="/">TRAVELXPERIENCE</Link></h1>
-      <ul className="nav-links">
-        <li><Link to="/explore">Explore</Link></li>
-        <li><Link to="/plan">Plan</Link></li>
-        <li><Link to="/experience">Experience</Link></li>
-        <li><Link to="/book">Book</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-      <div className="auth-buttons">
-        <Link to="/login" className="auth-button">Login</Link>
-        <Link to="/register" className="auth-button">Register</Link>
-      </div>
-    </nav>
-  );
+    <>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            TRAVL <i className="fab fa-gripfire"></i>
+          </Link>
+
+          <div className='menu-icon' onClick={ handleClick }>
+            <i className={ click ? 'fas fa-times' : 'fas fa-bars' }></i>
+          </div>
+
+          <ul className={ click ? 'nav-menu active': 'nav-menu' }>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={ closeMobileMenu } >
+                Home
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/services' className='nav-links' onClick={ closeMobileMenu } >
+                Services
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/sign-up' className='nav-links-mobile' onClick={ closeMobileMenu } >
+                Sign up
+              </Link>
+            </li>
+          </ul>
+          {/* this is the children of Button component that has a buttonStyle */}
+          { button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+          </div>
+
+      </nav>
+    </>
+  )
 }
 
 export default Navbar;
