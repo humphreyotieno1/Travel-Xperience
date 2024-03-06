@@ -10,7 +10,6 @@ const KeepInTouch = () => {
 
   return (
     <div className="keep-in-touch">
-      <h3>Keep in Touch</h3>
       <form onSubmit={handleSubmit}>
         <input type="email" name="email" placeholder="Enter your email" required />
         <button type="submit">Subscribe</button>

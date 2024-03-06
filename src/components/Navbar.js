@@ -29,7 +29,6 @@ function Navbar() {
         <li><Link to="/book">Book</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
-      <Search />
       <div className="auth-buttons">
         <Link to="/login" className="auth-button">Login</Link>
         <Link to="/register" className="auth-button">Register</Link>
