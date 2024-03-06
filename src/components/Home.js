@@ -1,16 +1,15 @@
-// Home.js
 import React, { useState, useEffect } from 'react';
 
 function Home() {
-  // Add any necessary state variables or functions here
+  // state variables or functions
   
-  // Example state variable
+  // state variable
   const [user, setUser] = useState(null);
 
-  // Example function to fetch user data
+  // function to fetch user data
   const fetchUserData = () => {
     // Make API request to fetch user data
-    // Replace this with your actual API call
+    // API call
     fetch('/api/user')
       .then(response => response.json())
       .then(data => setUser(data))
@@ -37,7 +36,7 @@ function Home() {
           <p>Sign in or register to access personalized features and recommendations.</p>
         </div>
       )}
-      {/* Add more content or functionality as needed */}
+      {/* more content or  as needed */}
     </div>
   );
 }
