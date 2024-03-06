@@ -67,7 +67,7 @@ function Footer() {
               TravelXperience <i className="fab fa-gripfire"></i>
             </Link>
           </div>
-          <small className='website-rights'>TravelXperience © 2022</small>
+          <small className='website-rights'>TravelXperience © 2024</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
