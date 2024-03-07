@@ -25,17 +25,15 @@
   font-size: 100px;
 }
 
-/*
 .sign-up {
-  background-image: url('../public/images/img-8.jpg');
+  background-image: url('../public/images/beautiful-shot-mountains-cloudy-sky-from-inside-plane-windows.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
-*/
-/* Destination page*/
+
 .destination {
   background-image: url('../public/images/img-9.jpg');
   background-position: center;

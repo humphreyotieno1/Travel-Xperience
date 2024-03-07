@@ -16,31 +16,31 @@ function Services() {
           <div className='services-wrapper'> 
           <ul className='services-items'>
             <CardItem 
-              src="img-9.jpg"
+              src="tranquil-scene-majestic-waterfall-forest-generated-by-ai.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="Adventure"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="img-2.jpg"
+              src="speed-boat-andaman-sea-phi-phi-island-krabi-thailand.jpg"
               text="Travel through the Islands of Bali in a Private Cruise"
               label="Luxury"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="img-4.jpg"
+              src="side-view-friends-playing-soccer.jpg"
               text="Experience Football on Top of the Himalayan Mountains"
               label="Adventure"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="img-3.jpg"
+              src="vertical-shot-sailing-boat-ocean-sunset.jpg"
               text="Set a Sail in the Atlantic ocean visiting Uncharted Waters"
               label="Mystery"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="img-8.jpg"
+              src="arab-people-with-camel-caravan.jpg"
               text="Ride through the Sahara Desert on a guided camel tour"
               label="Adrenaline"
               path="/services/activity"
@@ -56,31 +56,31 @@ function Services() {
           <div className='services-wrapper'> 
           <ul className='services-items'>
             <CardItem 
-              src="destination-1.jpg"
+              src="budapest.jpg"
               text="Budapest, Hungary"
               label="Europe"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="destination-2.jpg"
+              src="lisbon.jpg"
               text="Lisbon, Portugal"
               label="Europe"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="destination-3.jpg"
+              src="berlin.jpg"
               text="Berlin, Germany"
               label="Europe"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="destination-4.jpg"
+              src="london.jpg"
               text="London, England"
               label="Europe"
               path="/services/activity"
             ></CardItem>
             <CardItem 
-              src="destination-5.jpg"
+              src="delft.jpg"
               text="Delft, Holland"
               label="Europe"
               path="/services/activity"
