@@ -6,14 +6,12 @@ import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUp';
 import Destination from './components/pages/Destination';
 import ScrollToTop from './components/ScrollToTop';
-import LandingPage from './components/pages/LandingPage';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
       <Navbar />
-      <LandingPage />
       <ScrollToTop>
         <Routes>
           <Route path='/' exact element={<Home />} />
