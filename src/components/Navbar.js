@@ -25,41 +25,38 @@ function Navbar() {
   window.addEventListener('resize', showButton);
 
   return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TravelXperience <i className="fab fa-gripfire"></i>
-          </Link>
+    <nav className='navbar'>
+      <div className='navbar-container'>
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          TravelXperience <i className="fab fa-gripfire"></i>
+        </Link>
 
-          <div className='menu-icon' onClick={ handleClick }>
-            <i className={ click ? 'fas fa-times' : 'fas fa-bars' }></i>
-          </div>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
+        </div>
 
-          <ul className={ click ? 'nav-menu active': 'nav-menu' }>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={ closeMobileMenu } >
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/services' className='nav-links' onClick={ closeMobileMenu } >
-                Services
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/sign-up' className='nav-links-mobile' onClick={ closeMobileMenu } >
-                Sign up
-              </Link>
-            </li>
-          </ul>
-          {/* this is the children of Button component that has a buttonStyle */}
-          { button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
-          </div>
-
-      </nav>
-    </>
-  )
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu} >
+              Home
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/services' className='nav-links' onClick={closeMobileMenu} >
+              Services
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu} >
+              Sign up
+            </Link>
+          </li>
+        </ul>
+        {/* Button component with conditional rendering based on screen size */}
+        {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
