@@ -26,7 +26,6 @@ export const Button = ({
       onClick={onClick}
       type={type}
       >
-        { /* whatever you put inside this component, it will render it via 'children 'prop*/ }
         {children} 
       </button>
     </Link>
