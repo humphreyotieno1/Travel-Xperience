@@ -1,0 +1,110 @@
+{
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/users",
+        "description": "Get a list of all users",
+        "response": {
+          "status": 200,
+          "body": [
+            {
+              "id": 1,
+              "name": "John Doe",
+              "email": "john@example.com"
+            },
+            {
+              "id": 2,
+              "name": "Jane Smith",
+              "email": "jane@example.com"
+            },
+            {
+              "id": 3,
+              "name": "Alice Johnson",
+              "email": "alice@example.com"
+            }
+          ]
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/users/{id}",
+        "description": "Get a specific user by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "integer",
+            "description": "The ID of the user"
+          }
+        ],
+        "response": {
+          "status": 200,
+          "body": {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com"
+          }
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/users",
+        "description": "Create a new user",
+        "request": {
+          "body": {
+            "name": "string",
+            "email": "string"
+          }
+        },
+        "response": {
+          "status": 201,
+          "body": {
+            "id": 4,
+            "name": "New User",
+            "email": "newuser@example.com"
+          }
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/users/{id}",
+        "description": "Update an existing user",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "integer",
+            "description": "The ID of the user to update"
+          }
+        ],
+        "request": {
+          "body": {
+            "name": "string",
+            "email": "string"
+          }
+        },
+        "response": {
+          "status": 200,
+          "body": {
+            "id": 1,
+            "name": "Updated User",
+            "email": "updated@example.com"
+          }
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/users/{id}",
+        "description": "Delete an existing user",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "integer",
+            "description": "The ID of the user to delete"
+          }
+        ],
+        "response": {
+          "status": 204,
+          "body": {}
+        }
+      }
+    ]
+  }
