@@ -1,0 +1,161 @@
+.destination {
+    background-image: url('/images/img-9.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 350px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .destination-container {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    animation: slideIn 1s ease;
+  }
+  
+  .destination-container h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    animation: slideInLeft 1s ease;
+  }
+  
+  .destination-container p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 800px;
+    animation: slideInRight 1s ease;
+  }
+  
+  .info-wrapper {
+    max-width: 800px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  h3 {
+    margin: 3rem 0 1.3rem 0;
+    font-size: 2.4rem;
+    animation: fadeInDown 1s ease;
+  }
+  
+  h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .destination-container ul li {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    animation: fadeIn 1s ease;
+  }
+  
+  .booking-container {
+    width: 350px;
+    height: fit-content;
+    padding: 1.4rem;
+    border: 2px solid #242424;
+    border-radius: 5px;
+    animation: slideInRight 1s ease;
+  }
+  
+  .booking-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .booking-info h5 {
+    font-size: 1.2rem;
+  }
+  
+  .booking-info .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .btn-book {
+    padding: 12px 26px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid #242424;
+    color: #fff;
+    background-color: #242424;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .btn-book:hover {
+    background-color: #fff;
+    color: #242424;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

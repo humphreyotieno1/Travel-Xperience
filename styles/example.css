@@ -1,0 +1,57 @@
+body {
+    background-image: url('/images/world.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #090505;
+    font-size: 100px;
+  }
+
+.heading {
+    padding: 4rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+ h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+}
+
+.services-items {
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .services-items {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .services-items {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .services-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
