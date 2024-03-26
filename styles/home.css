@@ -3,6 +3,11 @@ body {
     background-color: #f7f7f7;
 }
 
+.btn btn-primary btn-lg hero-btn {
+    background-color: #1f98f4;
+    color: #c7b4b4;
+}
+
 .hero-container {
     height: 100vh;
     display: flex;
